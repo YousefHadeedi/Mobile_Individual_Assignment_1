@@ -3,6 +3,8 @@ package com.example.assignment_1_1171655;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -53,9 +55,12 @@ public class MainActivity extends AppCompatActivity {
         gender.add("Male");
         gender.add("Female");
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, gender);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.spinner_item, gender);
 
         spn_gender.setAdapter(adapter);
+
+        spn_gender.getBackground().setColorFilter(getResources().getColor(R.color.black), PorterDuff.Mode.SRC_ATOP);
+
     }
 
     private void initiateMonthsSpinner() {
@@ -73,9 +78,11 @@ public class MainActivity extends AppCompatActivity {
         months.add("November");
         months.add("December");
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, months);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.spinner_item, months);
 
         spn_months.setAdapter(adapter);
+
+        spn_months.getBackground().setColorFilter(getResources().getColor(R.color.black), PorterDuff.Mode.SRC_ATOP);
     }
 
     private void initiateDaysSpinner() {
@@ -85,9 +92,11 @@ public class MainActivity extends AppCompatActivity {
             days.add(i + "");
         }
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, days);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.spinner_item, days);
 
         spn_days.setAdapter(adapter);
+
+        spn_days.getBackground().setColorFilter(getResources().getColor(R.color.black), PorterDuff.Mode.SRC_ATOP);
     }
 
     public void btn_save_onClick(View view) {

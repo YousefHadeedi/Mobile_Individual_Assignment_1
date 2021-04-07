@@ -15,8 +15,10 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:text="@string/title_guide"
-            style="@style/txt_style_2" />
+            style="@style/txt_style_2"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="@string/title_guide" />
     </LinearLayout>
 
     <LinearLayout
@@ -61,7 +63,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:textColor="@color/grayCloud" />
         </LinearLayout>
 
         <View
@@ -83,7 +86,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="phone" />
+                android:inputType="phone"
+                android:textColor="@color/grayCloud" />
         </LinearLayout>
 
         <View
@@ -157,7 +161,8 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="year"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:textColor="@color/grayCloud" />
             </LinearLayout>
 
         </LinearLayout>
@@ -179,7 +184,7 @@
 
             <Spinner
                 android:id="@+id/spn_gender"
-                android:layout_width="120dp"
+                android:layout_width="142dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="0" />
@@ -207,7 +212,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0"
                 android:ems="10"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:textColor="@color/grayCloud" />
 
 
         </LinearLayout>
@@ -219,11 +225,12 @@
 
         <Button
             android:id="@+id/btn_save"
+            style="@style/btn_style_1"
             android:onClick="btn_save_onClick"
             android:text="@string/btn_save"
+            android:textColor="#FFFFFF"
             app:backgroundTint="@color/cyan"
-            app:cornerRadius="15dp"
-            style="@style/btn_style_1" />
+            app:cornerRadius="15dp" />
 
     </LinearLayout>
 
