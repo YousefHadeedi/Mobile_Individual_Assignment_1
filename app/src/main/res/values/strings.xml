@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">assignment-1_1171655</string>
+    <string name="title_guide">Enter your information</string>
+    <string name="txt_name">Name:</string>
+    <string name="txt_email">Email:</string>
+    <string name="txt_phone">Phone:</string>
+    <string name="txt_DOB">Date of Birth:</string>
+    <string name="txt_gender">Gender:</string>
+    <string name="txt_pass">Password:</string>
+    <string name="btn_save">Save</string>
+    <string name="txt_userInfo">My Information</string>
+    <string name="txt_name_forView">Name:</string>
+    <string name="txt_email_forView">Email:</string>
+    <string name="txt_phone_forView">Phone:</string>
+    <string name="txt_DOF_forView">Date of Birth:</string>
+    <string name="txt_gender_forView">Gender:</string>
+    <string name="btn_showPass">Show my Password</string>
+</resources>
